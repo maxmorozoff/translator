@@ -58,11 +58,11 @@ $ translate -_ привет
   ru: "привет" -> it: "ciao"
   
   Translation took 386.214161ms
+// To change language use -lang
+$ translate -lang en-it hi
+  en: "hi" -> it: "Ciao"
 
-$ translate -_ Привет
-  ru: "Привет" -> it: "Ciao"
-
-  Translation took 386.214161ms
+  Translation took 415.001544ms
 ```
 ```
 $ cat text.txt | translate > output.txt
