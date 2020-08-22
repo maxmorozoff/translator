@@ -49,7 +49,7 @@ $ translate -lang en-ru
 en: // To modify language use flag -lang
 ```
 ```
-$ cat text.txt | translate
+$ cat text.txt | translate > output.txt
 ```
 ```
 $ translate file text.txt output.txt -col 3 -delim ; -lang it-ru
