@@ -53,11 +53,13 @@ $ translate ciao
   it: "ciao" -> ru: "Привет"
 
   Translation took 486.391326ms
+
 // To invert language use -_
 $ translate -_ привет
   ru: "привет" -> it: "ciao"
   
   Translation took 386.214161ms
+
 // To change language use -lang
 $ translate -lang en-it hi
   en: "hi" -> it: "Ciao"
