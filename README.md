@@ -43,10 +43,26 @@ Usage of subcommand file:
 ## Examples:
 ```
 $ translate
-it: // Enter a word here
-    // To switch language in this mode just hit enter
+  it: // Enter a word here
+      // To switch language in this mode just hit enter
 $ translate -lang en-ru 
-en: // To modify language use flag -lang
+  en: // To modify language use flag -lang
+```
+```
+$ translate ciao
+  it: "ciao" -> ru: "Привет"
+
+  Translation took 486.391326ms
+// To invert language use -_
+$ translate -_ привет
+  ru: "привет" -> it: "ciao"
+  
+  Translation took 386.214161ms
+
+$ translate -_ Привет
+  ru: "Привет" -> it: "Ciao"
+
+  Translation took 386.214161ms
 ```
 ```
 $ cat text.txt | translate > output.txt
